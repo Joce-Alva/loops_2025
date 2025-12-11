@@ -22,10 +22,16 @@ print("The sum of numbers 1 to", n , "is:", total)
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
-
+n1= int(input("Enter a number:"))
 # *(Example: factorial of 5 is 120)
-
-
+#5! multiplies all the numbes from 1-5
+def factorial(n1):
+    factorial=1
+    
+    for i in range (n1):
+        factorial*=i+1
+    return factorial
+print (factorial(n1))
 # ### **Problem 4: Count Vowels**
 
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
